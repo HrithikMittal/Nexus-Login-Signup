@@ -44,6 +44,7 @@ MongoClient.connect(url, (err, db) => {
   router.route("/details-update").post(function (req, res) {
     var exits = {
       pno: req.body.pno
+
     };
     var updatevalue = {
       pno: req.body.pno,
